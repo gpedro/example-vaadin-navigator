@@ -37,6 +37,7 @@ public class MainUI extends UI {
             @Override
             public void menuSelected(MenuItem selectedItem) {
                 if(!viewId.equals("not-implemented")) {
+                    // go to viewId
                     navigator.navigateTo(viewId);
                 }
             }
@@ -51,6 +52,7 @@ public class MainUI extends UI {
         
         VerticalLayout content = new VerticalLayout();
 
+        // create navigator to this UI and put view in content
         navigator = new Navigator(this, content);  
         
         // registering routes
